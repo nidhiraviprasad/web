@@ -1,108 +1,98 @@
-.transformer-tabs {
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-bottom: 3px solid white;
-  }
-  li {
-    display: inline-block;
-    padding: 0;
-    vertical-align: bottom;
-    &:nth-child(1) .active {
-      color: lighten(#9b59b6, 20%);
-      border-bottom-color: #9b59b6;
-    }
-    &:nth-child(2) .active {
-      color: lighten(#3498db, 20%);
-      border-bottom-color: #3498db;
-    }
-    &:nth-child(3) .active {
-      color: lighten(#e67e22, 20%);
-      border-bottom-color: #e67e22;
-    }
-    &:nth-child(4) .active {
-      color: lighten(#c0392b, 20%);
-      border-bottom-color: #c0392b;
-    }
-  }
-  a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-    &.active {
-      border-bottom: 3px solid transparent;
-      position: relative;
-      bottom: -3px;
-    }
-  }
-  @media (max-width: 700px) {
-    ul {
-      border-bottom: 0;
-      overflow: hidden;
-      position: relative;
-      background: #666; /* fallback */
-      background: linear-gradient(#666, #222);
-      &::after {
-        content: "☰";
-        position: absolute;
-        top: 8px;
-        right: 15px;
-        z-index: 2;
-        pointer-events: none;
-      }
-      &.open {
-        a {
-          position: relative;
-          display: block;
-        }
-      }
-    }
-    li {
-      display: block;
-    }
-    a {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      &.active {
-        border: 0;
-        z-index: 1;
-        background: #666; /* fallback */
-        background: linear-gradient(#666, #222);
-      }
-    }
-  }
-}
+// Settings
+$white-rock: #EDECD5;
+$rum-swizzle: #FBF9E8;
+$buddha-gold: #C0970A;
+$citrus: #AAC706;
+$mountain-meadow: #15C68E;
+$blue-green: #14A3BB;
+$medium-slate-blue: #776EEF;
 
-.tabs {
-  > div {
-    display: none;
-    padding: 1rem;
-    &:nth-of-type(1) {
-      background: #9b59b6; 
-    }
-    &:nth-of-type(2) {
-      background: #3498db; 
-    }
-    &:nth-of-type(3) {
-      background: #e67e22; 
-    }
-    &:nth-of-type(4) {
-      background: #c0392b; 
-    }
-  }
-  > .active {
-    display: block;
-  }
-}
+$tabs-list: (
+  apples: $buddha-gold, 
+  bananas: $citrus, 
+  cherries: $mountain-meadow, 
+  oranges: $blue-green, 
+  pears: $medium-slate-blue
+);
 
+// General styles
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+* { 
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
 body {
-  padding: 1rem;
-  background: #333;
-  color: white;
-  font: 100%/1.4 Sans-Serif;
+  font-family: Vollkorn;
+  height: 100%;
+  padding: 2em;
+  line-height: 1.5;
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Tab styling
+.tabs {
+  height: 100%;
+}
+input[name="tabs"] {
+  float: left;
+  opacity: 0;
+  position: absolute;
+}
+input[name="tabs"] ~ label {
+    padding: 1em;
+    width: 20%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition:background .3s;
+    &:hover {
+      background:#d9d9d9;
+    }
+    &:focus {
+      outline: 0;
+      text-shadow: 1px 1px 3px #888;
+    }
+}
+.tab {
+    height: 100%;
+    display: none;
+    padding: 6em 2em 2em;
+}
+
+@each $current-tab, $colour in $tabs-list {
+    label[for="toggle-#{$current-tab}"] {
+        border-top: 8px solid #{$colour};
+        background: $rum-swizzle;
+        border-left: 1px solid darken($white-rock, 20%);
+        text-transform: uppercase;
+    }
+    #toggle-#{$current-tab}:checked ~ .tab-#{$current-tab} { 
+        display:block;
+        background: $white-rock;
+    }
+    #toggle-#{$current-tab}:checked ~ label[for="toggle-#{$current-tab}"] {
+        cursor: default;
+        background: $white-rock;
+        color: #{$colour};
+    }
+}
+svg {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.text-title {
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.kaomoji {
+  white-space: nowrap;
 }
