@@ -1,92 +1,181 @@
-// Settings
-$white-rock: #edecd5;
-$rum-swizzle: #fbf9e8;
-$buddha-gold: #c0970a;
-$citrus: #aac706;
-$mountain-meadow: #15c68e;
-$blue-green: #14a3bb;
-$medium-slate-blue: #776eef;
+h1 {
 
-$tabs-list: (
-  apples: $buddha-gold, 
-  bananas: $citrus, 
-  cherries: $mountain-meadow, 
-  oranges: $blue-green, 
-  pears: $medium-slate-blue
-);
+  font-family: "Comic Sans MS";
 
-// General styles
-@import url(https://fonts.googleapis.com/css?family=Vollkorn);
-* { 
-  box-sizing: border-box;
+  color: #af11d7;
+
+  text-align: left;
+
+  font-size: 40px;
+
 }
-html {
-  height: 100%;
+
+
+
+
+
+h3 {
+
+  color: #af11d7;
+
+  font-family: "Comic Sans MS";
+
 }
+
+
+
+h4 {
+
+  color: #af11d7;
+
+  font-family: "Comic Sans MS";
+
+  text-align: right;
+
+}
+
+
+
 body {
-  font-family: Vollkorn;
-  height: 100%;
-  padding: 2em;
-  line-height: 1.5;
-  max-width: 70em;
-  margin-left: auto;
-  margin-right: auto;
+
+  background: #9de8ff;
+
 }
 
-// Tab styling
+
+
+
+
 .tabs {
-  height: 100%;
-}
-input[name="tabs"] {
-  float: left;
-  opacity: 0;
-  position: absolute;
-}
-input[name="tabs"] ~ label {
-    padding: 1em;
-    width: 20%;
-    float: left;
-    text-align: center;
-    cursor: pointer;
-    transition:background .3s;
-    &:hover {
-      background:#d9d9d9;
-    }
-    &:focus {
-      outline: 0;
-      text-shadow: 1px 1px 3px #888;
-    }
-}
-.tab {
-    height: 100%;
-    display: none;
-    padding: 6em 2em 2em;
+
+    width:100%;
+
+    display:inline-block;
+
 }
 
-@each $current-tab, $colour in $tabs-list {
-    label[for="toggle-#{$current-tab}"] {
-        border-top: 8px solid #{$colour};
-        background: $rum-swizzle;
-        border-left: 1px solid darken($white-rock, 20%);
-        text-transform: uppercase;
-    }
-    #toggle-#{$current-tab}:checked ~ .tab-#{$current-tab} { 
+ 
+
+
+
+    .tab-links:after {
+
         display:block;
-        background: $white-rock;
+
+        clear:both;
+
+        content:'';
+
+        
+
     }
-    #toggle-#{$current-tab}:checked ~ label[for="toggle-#{$current-tab}"] {
-        cursor: default;
-        background: $white-rock;
-        color: #{$colour};
+
+ 
+
+    .tab-links li {
+
+        margin:0px 5px;
+
+        float: left;
+
+        list-style:none;
+
+        font-family: Arial;
+
     }
-}
-.text-title {
-  display: none;
-  @media screen and (min-width: 900px) {
-    display: inline-block;
-    vertical-align: middle;
+
+ 
+
+        .tab-links a {
+
+            padding:9px 15px;
+
+            display:inline-block;
+
+            border-radius:3px 3px 0px 0px;
+
+            background:#d65bff;
+
+            font-size:16px;
+
+            font-weight:600;
+
+            color:#4c4c4c;
+
+            transition:all linear 0.15s;
+
+        }
+
+ 
+
+        .tab-links a:hover {
+
+            background:#a7cce5;
+
+            text-decoration:none;
+
+        }
+
+ 
+
+ 
+
+    li.active a, li.active a:hover {
+
+        background:#fff;
+
+        color:#4c4c4c;
+
+    }
+
+ 
+
+ 
+
+    .tab-content {
+
+        padding:15px;
+
+        border-radius:3px;
+
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+
+        background:#fff;
+
+    }
+
+ 
+
+        .tab {
+
+            display:none;
+
+        }
+
+ 
+
+        .tab.active {
+
+            display:block;
+
+        }
+
+
+
+  p {
+
+    font-family: Arial;
+
   }
-}
-.kaomoji {
-  white-space: nowrap;
+
+  
+
+  h2 {
+
+    font-family: Arial;
+
+  }
+
+  }
+
 }
