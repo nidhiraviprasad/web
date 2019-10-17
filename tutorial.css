@@ -1,11 +1,11 @@
 // Settings
-$white-rock: #EDECD5;
-$rum-swizzle: #FBF9E8;
-$buddha-gold: #C0970A;
-$citrus: #AAC706;
-$mountain-meadow: #15C68E;
-$blue-green: #14A3BB;
-$medium-slate-blue: #776EEF;
+$white-rock: #edecd5;
+$rum-swizzle: #fbf9e8;
+$buddha-gold: #c0970a;
+$citrus: #aac706;
+$mountain-meadow: #15c68e;
+$blue-green: #14a3bb;
+$medium-slate-blue: #776eef;
 
 $tabs-list: (
   apples: $buddha-gold, 
@@ -79,12 +79,6 @@ input[name="tabs"] ~ label {
         background: $white-rock;
         color: #{$colour};
     }
-}
-svg {
-  height: 2rem;
-  width: 2rem;
-  display: inline-block;
-  vertical-align: middle;
 }
 .text-title {
   display: none;
