@@ -10,8 +10,6 @@
 
    <link rel="stylesheet" type="text/css" href="tutorial.css" media="screen" />
 
-   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"></script>
-
    <link rel="stylesheet" href="jQuery.js">
 
 </head>
@@ -20,127 +18,57 @@
 
 <body>
 
-  <div class="tabs">
-
-    <ul class="tab-links">
-
-        <li class="active"><a href="#tab1">Home</a></li>
-
-        <li><a href="#tab2">My Coding Experience</a></li>
-
-       <li><a href="#tab3">About Me</a></li>
-
-    </ul>
-
- 
-
-    <div class="tab-content">
-
-        <div id="tab1" class="tab active">
-
-            <h1> Hi, I'm Nidhi. </h1>
-
-            <p> I'm 12 years old and in 6th grade.</p>
-
-            <p> I recently discovered that coding is one of my passions. I am learning Java and I'm a member of my school's Girls Who Code club. </p>
-
-            <p> I love to learn, especially when I can create something that I can call my own, like this website. Learning is very important to me, and I enjoy learning new things.</p>
-
-            <p> I have been coding for more than a year, and a lot of people have inspired and guided me. </p>
-
-            <p> This website is all about who I am. Explore this website to learn about me. </p>
-
-        </div>
-
- 
-
-        <div id="tab2" class="tab">
-
-            <h1> My Coding Experience</h1>
-
-            <h3> Scratch and Tynker</h3>
-
-            <p> I first started coding with Scratch and Tynker (the ones where you drag and drop blocks to form the code) in elementary school. In my free time, I used Scratch to animate characters through code. When I was in the computer lab, I would sometimes use Tynker's Hour of Code program and create mini-games.</p>
-
-            <p> I did not find coding interesting in 5th grade. In fact, I found it a little boring. Why? I didn't know how to use blocks to form code, so I had a hard time creating projects, so I found coding boring. But at that time, I didn't know that actual coding was more complex.</p>
-
-            <p> In 6th grade, one of my classes was Tynker. I thought that maybe it deserved a second chance, and it was actually really fun and interesting. I gained so much more knowledge about code, and I was proud of my creations.</p>
-
-            <h3> Java Classes</h3>
-
-            <p> Now I found coding enjoyable, and I wanted to learn more. One day, my mom asked me if I wanted to join Java classes, and I immediately agreed. I started created fun games using Java, which turned out to be a more complicated language than I previously thought. I always enjoy going to my Java classes.</p>
-
-            <h3> Girls Who Code</h3>
-
-            <p> By now, I loved coding. I also got the opportunity to become a member of my school's Girls Who Code club, which is where I created this website. I learned many languages here, including HTML, Javascript, and CSS. I could understand code very well by now, and knew how to create my own projects. Being in this club was a really fun and memorable experience.</p>
-
-        </div>
-
- 
-
-        <div id="tab3" class="tab">
-
-            <h1> About Me</h1>
-
-            <h3>At Home</h3>
-
-            <p> I live with my mom and dad, and I have an older sister in college. A lot of my friends live in the same neighborhood as me, so many times, I'll be playing outside with them.</p>
-
-            <h3>My Interests</h3>
-
-            <p> Aside from coding, I like to play badminton. I go to badminton classes, and I hope to get really good at it. I also like to do arts and crafts at home in my spare time.</p>
-
-            <h3>Dance</h3>
-
-            <p> I've been dancing since I was 7, and my first performance was when I was 4. My group and I have given many dance performances, and we've won several prizes in competitions. I also help my teacher with her beginner group of students. I help them with their steps and skills, and I also keep track of their progress. I am really passionate about dancing.</p>
-
-            <h3> What 'Cute' Really Means</h3>
-
-            <center><img src="https://s-media-cache-ak0.pinimg.com/236x/32/60/54/326054df712f51e8caf3819cee9b0253.jpg"> </img>
-
-            <img src="https://s-media-cache-ak0.pinimg.com/236x/e5/25/9e/e5259e41ba922f0029cd05c14cf46784.jpg"> </img>
-
-            <img src="http://data2.whicdn.com/images/75141342/thumb.jpg"> </img> </center>
-
-            <p> I really adore baby hedgehogs because they are so cute! The pictures above are my favorite pictures of baby hedgehogs that I have ever seen.</p>
-
-        </div>
-
-
-
-    </div>
-
+<div class="tabs">
+  <input type="radio" name="tabs" id="toggle-apples" checked="checked" />
+  <label for="toggle-apples">
+                
+        <span class="text-title">Apples</span>
+    </label>
+  <input type="radio" name="tabs" id="toggle-bananas" />
+  <label for="toggle-bananas">
+        
+        <span class="text-title">Bananas</span>
+    </label>
+  <input type="radio" name="tabs" id="toggle-cherries" />
+  <label for="toggle-cherries">
+        <span class="text-title">Cherries</span>
+    </label>
+  <input type="radio" name="tabs" id="toggle-oranges" />
+  <label for="toggle-oranges">
+        
+        <span class="text-title">Oranges</span>
+    </label>
+  <input type="radio" name="tabs" id="toggle-pears" />
+  <label for="toggle-pears">
+        
+        <span class="text-title">Pears</span>
+    </label>
+  <div class="tab tab-apples">
+    <p>
+      Apples are green. Or red. Or yellow. <span class="kaomoji">¯\_(ツ)_/¯</span>
+    </p>
+  </div>
+  <div class="tab tab-bananas">
+    <p>
+      Bananas are usually yellow. Monkeys seem to like them.
+    </p>
+  </div>
+  <div class="tab tab-cherries">
+    <p>
+      Cherries are lovely but who doesn't love bacon?
+    </p>
+  </div>
+  <div class="tab tab-oranges">
+    <p>
+      Oranges are chock full of vitamin C. Batman is the best superhero. Does he eat oranges every day?
+    </p>
+  </div>
+  <div class="tab tab-pears">
+    <p>
+      Soft pears beat crisp pears any day. Fish cannot fly. Birds cannot swim. That's just the way it is.
+    </p>
+  </div>
 </div>
-
-<script>
-
-   jQuery(document).ready(function() {
-
-    jQuery('.tabs .tab-links a').on('click', function(e)  {
-
-        var currentAttrValue = jQuery(this).attr('href');
-
- 
-
-        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
-
- 
-
-        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
-
-        jQuery('.tabs ' + currentAttrValue).slideDown(400).siblings().slideUp(400);
-
- 
-
-        e.preventDefault();
-
-    });
-
-});
-
-
-
-</script>
 
 </body>
 
