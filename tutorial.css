@@ -1,181 +1,97 @@
-h1 {
+$white-rock: #EDECD5;
+$rum-swizzle: #FBF9E8;
+$buddha-gold: #C0970A;
+$citrus: #AAC706;
+$mountain-meadow: #15C68E;
+$blue-green: #14A3BB;
+$medium-slate-blue: #776EEF;
 
-  font-family: "Comic Sans MS";
+$tabs-list: (
+  apples: $buddha-gold, 
+  bananas: $citrus, 
+  cherries: $mountain-meadow, 
+  oranges: $blue-green, 
+  pears: $medium-slate-blue
+);
 
-  color: #af11d7;
-
-  text-align: left;
-
-  font-size: 40px;
-
+// General styles
+@import url(https://fonts.googleapis.com/css?family=Vollkorn);
+* { 
+  box-sizing: border-box;
 }
-
-
-
-
-
-h3 {
-
-  color: #af11d7;
-
-  font-family: "Comic Sans MS";
-
+html {
+  height: 100%;
 }
-
-
-
-h4 {
-
-  color: #af11d7;
-
-  font-family: "Comic Sans MS";
-
-  text-align: right;
-
-}
-
-
-
 body {
-
-  background: #9de8ff;
-
+  font-family: Vollkorn;
+  height: 100%;
+  padding: 2em;
+  line-height: 1.5;
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-
-
-
+// Tab styling
 .tabs {
-
-    width:100%;
-
-    display:inline-block;
-
+  height: 100%;
+}
+input[name="tabs"] {
+  float: left;
+  opacity: 0;
+  position: absolute;
+}
+input[name="tabs"] ~ label {
+    padding: 1em;
+    width: 20%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition:background .3s;
+    &:hover {
+      background:#d9d9d9;
+    }
+    &:focus {
+      outline: 0;
+      text-shadow: 1px 1px 3px #888;
+    }
+}
+.tab {
+    height: 100%;
+    display: none;
+    padding: 6em 2em 2em;
 }
 
- 
-
-
-
-    .tab-links:after {
-
+@each $current-tab, $colour in $tabs-list {
+    label[for="toggle-#{$current-tab}"] {
+        border-top: 8px solid #{$colour};
+        background: $rum-swizzle;
+        border-left: 1px solid darken($white-rock, 20%);
+        text-transform: uppercase;
+    }
+    #toggle-#{$current-tab}:checked ~ .tab-#{$current-tab} { 
         display:block;
-
-        clear:both;
-
-        content:'';
-
-        
-
+        background: $white-rock;
     }
-
- 
-
-    .tab-links li {
-
-        margin:0px 5px;
-
-        float: left;
-
-        list-style:none;
-
-        font-family: Arial;
-
+    #toggle-#{$current-tab}:checked ~ label[for="toggle-#{$current-tab}"] {
+        cursor: default;
+        background: $white-rock;
+        color: #{$colour};
     }
-
- 
-
-        .tab-links a {
-
-            padding:9px 15px;
-
-            display:inline-block;
-
-            border-radius:3px 3px 0px 0px;
-
-            background:#d65bff;
-
-            font-size:16px;
-
-            font-weight:600;
-
-            color:#4c4c4c;
-
-            transition:all linear 0.15s;
-
-        }
-
- 
-
-        .tab-links a:hover {
-
-            background:#a7cce5;
-
-            text-decoration:none;
-
-        }
-
- 
-
- 
-
-    li.active a, li.active a:hover {
-
-        background:#fff;
-
-        color:#4c4c4c;
-
-    }
-
- 
-
- 
-
-    .tab-content {
-
-        padding:15px;
-
-        border-radius:3px;
-
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-
-        background:#fff;
-
-    }
-
- 
-
-        .tab {
-
-            display:none;
-
-        }
-
- 
-
-        .tab.active {
-
-            display:block;
-
-        }
-
-
-
-  p {
-
-    font-family: Arial;
-
+}
+svg {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.text-title {
+  display: none;
+  @media screen and (min-width: 900px) {
+    display: inline-block;
+    vertical-align: middle;
   }
-
-  
-
-  h2 {
-
-    font-family: Arial;
-
-  }
-
-  }
-
+}
+.kaomoji {
+  white-space: nowrap;
 }
