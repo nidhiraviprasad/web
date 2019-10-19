@@ -5,14 +5,18 @@
  html {
 	 height: 100%;
 }
+ head {
+	font-family: Vollkorn;
+}
+	
  body {
 	 font-family: Vollkorn;
 	 height: 100%;
 	 padding: 2em;
 	 line-height: 1.5;
 	 max-width: 70em;
-	 margin-left: auto;
-	 margin-right: auto;
+	 margin-left: 0;
+	 margin-right: 0;
 }
  .tabs {
 	 height: 100%;
