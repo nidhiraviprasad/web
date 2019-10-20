@@ -13,8 +13,7 @@
   font-weight: bold;
   transition: background ease 0.2s;
 }
-.tabs label a.tabone {background:#fcb68b;}
-.tabs li a.tabtwo {background:#fcb68b;}
+
  
 .tabs .tab {
   order: 99;
@@ -28,8 +27,21 @@
   display: none;
 }
  
-.tabs input[type="radio"]:checked + label {
-  background: #fff;
+/*.tabs input[type="radio"]:checked + label {
+  background: #ffffff;
+}*/
+
+input[type="radio"]:nth-of-type(1) {
+	 outline-color: #f06868;
+}
+ input[type="radio"]:nth-of-type(2) {
+	 outline-color: #fab57a;
+}
+ input[type="radio"]:nth-of-type(3) {
+	 outline-color: #edf798;
+}
+ input[type="radio"]:nth-of-type(4) {
+	 outline-color: #80d6ff;
 }
  
 .tabs input[type="radio"]:checked + label + .tab {
