@@ -13,15 +13,10 @@
   font-weight: bold;
   transition: background ease 0.2s;
 }
-.tabs label > div:nth-of-type(1) {
-	background: #fcb68b
-}
-.tabs label > div:nth-of-type(2) {
-	background: #fcb68b
-}
-.tabs label > div:nth-of-type(3) {
-	background: #fcb68b
-}
+.tabs li a:nth-child(1) {background-color:#fcb68b;} 
+.tabs li a:nth-child(2) {background-color:#fcb68b;} 
+.tabs li a:nth-child(3) {background-color:#fcb68b;}        
+.tabs li a:nth-child(4) {background-color:#336699;}
  
 .tabs .tab {
   order: 99;
