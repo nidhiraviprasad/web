@@ -32,7 +32,7 @@
 }*/
 
 input[type="radio"]:nth-of-type(1) {
-	 outline-color: #f06868;
+	 background: #f06868;
 }
  input[type="radio"]:nth-of-type(2) {
 	 outline-color: #fab57a;
