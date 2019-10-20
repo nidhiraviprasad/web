@@ -13,8 +13,8 @@
   font-weight: bold;
   transition: background ease 0.2s;
 }
-.tabs label a.tabone {background-color:#fcb68b;}
-.tabs li a.tabtwo {background-color:#fcb68b;}
+.tabs label a.tabone {background:#fcb68b;}
+.tabs li a.tabtwo {background:#fcb68b;}
  
 .tabs .tab {
   order: 99;
