@@ -1,142 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:500&display=swap');
-* {
-	 box-sizing: border-box;
-}
- html {
-	 height: 100%;
-}
- head {
-	font-family: 'Cormorant Infant', serif;
-}
-	
- body {
-	 font-family: 'Cormorant Infant', serif;
-	 height: 100%;
-	 padding: 2em;
-	 line-height: 1.5;
-	 max-width: 70em;
-	 margin-left: 0 auto;
-	 margin-right: 0 auto;
-}
- .tabs {
-	 height: 100%;
-}
- input[name="tabs"] {
-	 float: left;
-	 opacity: 0;
-	 position: absolute;
-}
- input[name="tabs"] ~ label {
-	 padding: 1em;
-	 width: 20%;
-	 float: left;
-	 text-align: center;
-	 cursor: pointer;
-	 transition: background 0.3s;
-}
- input[name="tabs"] ~ label:hover {
-	 background: #d9d9d9;
-}
- input[name="tabs"] ~ label:focus {
-	 outline: 0;
-	 text-shadow: 1px 1px 3px #888;
-}
- .tab {
-	 height: 100%;
-	 display: none;
-	 padding: 6em 2em 2em;
-}
- label[for="toggle-apples"] {
-	 border-top: 8px solid #c0970a;
-	 background: #fbf9e8;
-	 border-left: 1px solid #cecc8e;
-	 text-transform: uppercase;
-}
- #toggle-apples:checked ~ .tab-apples {
-	 display: block;
-	 background: #edecd5;
-}
- #toggle-apples:checked ~ label[for="toggle-apples"] {
-	 cursor: default;
-	 background: #edecd5;
-	 color: #c0970a;
-}
- label[for="toggle-bananas"] {
-	 border-top: 8px solid #aac706;
-	 background: #fbf9e8;
-	 border-left: 1px solid #cecc8e;
-	 text-transform: uppercase;
-}
- #toggle-bananas:checked ~ .tab-bananas {
-	 display: block;
-	 background: #edecd5;
-}
- #toggle-bananas:checked ~ label[for="toggle-bananas"] {
-	 cursor: default;
-	 background: #edecd5;
-	 color: #aac706;
-}
- label[for="toggle-cherries"] {
-	 border-top: 8px solid #15c68e;
-	 background: #fbf9e8;
-	 border-left: 1px solid #cecc8e;
-	 text-transform: uppercase;
-}
- #toggle-cherries:checked ~ .tab-cherries {
-	 display: block;
-	 background: #edecd5;
-}
- #toggle-cherries:checked ~ label[for="toggle-cherries"] {
-	 cursor: default;
-	 background: #edecd5;
-	 color: #15c68e;
-}
- label[for="toggle-oranges"] {
-	 border-top: 8px solid #14a3bb;
-	 background: #fbf9e8;
-	 border-left: 1px solid #cecc8e;
-	 text-transform: uppercase;
-}
- #toggle-oranges:checked ~ .tab-oranges {
-	 display: block;
-	 background: #edecd5;
-}
- #toggle-oranges:checked ~ label[for="toggle-oranges"] {
-	 cursor: default;
-	 background: #edecd5;
-	 color: #14a3bb;
-}
- label[for="toggle-pears"] {
-	 border-top: 8px solid #776eef;
-	 background: #fbf9e8;
-	 border-left: 1px solid #cecc8e;
-	 text-transform: uppercase;
-}
- #toggle-pears:checked ~ .tab-pears {
-	 display: block;
-	 background: #edecd5;
-}
- #toggle-pears:checked ~ label[for="toggle-pears"] {
-	 cursor: default;
-	 background: #edecd5;
-	 color: #776eef;
-}
- svg {
-	 height: 2rem;
-	 width: 2rem;
-	 display: inline-block;
-	 vertical-align: middle;
-}
- .text-title {
-	 display: none;
-}
- @media screen and (min-width: 900px) {
-	 .text-title {
-		 display: inline-block;
-		 vertical-align: middle;
-	}
-}
- .kaomoji {
-	 white-space: nowrap;
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
 }
  
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background:  #3CC0F8;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+ 
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+}
+ 
+.tabs input[type="radio"] {
+  display: none;
+}
+ 
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+ 
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+ 
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+ 
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+.tabs > div {
+	 display: none;
+	 padding: 1rem;
+}
+ .tabs > div:nth-of-type(1) {
+	 background: #9b59b6;
+}
+ .tabs > div:nth-of-type(2) {
+	 background: #3498db;
+}
+ .tabs > div:nth-of-type(3) {
+	 background: #e67e22;
+}
+ .tabs > div:nth-of-type(4) {
+	 background: #c0392b;
+}
+ .tabs > .active {
+	 display: block;
+}
+ 
+body {
+  background: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
+}
