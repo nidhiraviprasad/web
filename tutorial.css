@@ -21,7 +21,7 @@
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #fff;
+  background: #e0e0e0;
 }
 
 .tabs input[type="radio"] {
@@ -29,7 +29,7 @@
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #fff;
+  background: #e0e0e0;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
