@@ -61,6 +61,17 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 	color: #f0b6dd;
 }
+a:link {
+  color: #f0b6dd; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ac3b61;
+  background-color: transparent;
+  text-decoration: none;
+}
 body {
   background: #edc7b7;
   min-height: 100vh;
