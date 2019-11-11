@@ -75,8 +75,9 @@ a:visited {
 }
 head {
 	padding: 3rem;
-	white-space: nowrap;
+	white-space: wrap;
         overflow-x: auto;
+  	float: left;
 }
 body {
   background: #edc7b7;
@@ -88,5 +89,4 @@ body {
   line-height: 1.5;
   margin: 0 auto;
   font-size: 112%;
-  float: left;
 }
