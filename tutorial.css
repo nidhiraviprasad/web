@@ -13,7 +13,7 @@
   background:  #ac3b61;
   font-weight: bold;
   transition: background ease 0.2s;
-  color: #f0b6dd;
+  color: #eb88c5;
 }
 
 .tabs .tab {
@@ -59,7 +59,7 @@ h2 {
 }
 h3 {
 	font-family: 'Roboto Slab', serif;
-	color: #f0b6dd;
+	color: #eb88c5;
 }
 a:link {
   color: #f0b6dd; 
@@ -76,7 +76,6 @@ head {
 	padding: 3rem;
 	padding-top: 100vh;
 	display:inline-block; 
-	margin-right:1000px;
 }
 body {
   background: #edc7b7;
