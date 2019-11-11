@@ -62,6 +62,13 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 	color: #eb88c5;
 }
+.lefttext {
+	float: left;
+	margin-right: 300px;
+}
+.rightimage {
+	float: right;
+}
 a:link {
   color: #f0b6dd; 
   background-color: transparent; 
@@ -81,7 +88,7 @@ head {
 }
 body {
   background: #edc7b7;
-  min-height: 100vh;
+  min-height: 75vh;
   box-sizing: border-box;
   padding-top: 10vh;
   font-family: 'Cormorant Infant', serif;
