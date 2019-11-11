@@ -53,7 +53,6 @@ h1 {
 	padding: 1rem;
 	font-family: 'Roboto Slab', serif;
 	color: #ac3b61;
-	float: left;
 	margin-right: 200px;
 }
 h2 {
@@ -89,4 +88,5 @@ body {
   line-height: 1.5;
   margin: 0 auto;
   font-size: 112%;
+  float: left;
 }
