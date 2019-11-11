@@ -57,8 +57,13 @@ h1 {
 }
 h2 {
 	font-family: 'Roboto Slab', serif;
+	color: #ac3b61;
 }
 h3 {
+	font-family: 'Roboto Slab', serif;
+	color: #eb88c5;
+}
+h4 {
 	font-family: 'Roboto Slab', serif;
 	color: #eb88c5;
 }
