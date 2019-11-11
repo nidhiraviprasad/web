@@ -13,6 +13,7 @@
   background:  #ac3b61;
   font-weight: bold;
   transition: background ease 0.2s;
+  color: #edb7c7;
 }
 
 .tabs .tab {
@@ -46,7 +47,6 @@
     width: 100%;
     margin-right: 0;
     margin-top: 0.2rem;
-    color: #faaaf5;
   }
 }
 h1 {
@@ -58,10 +58,10 @@ h2 {
 }
 h3 {
 	font-family: 'Roboto Slab', serif;
-	color: #faaaf5;
+	color: #edb7c7;
 }
 body {
-  background: #edb7c7;
+  background: #edc7b7;
   min-height: 100vh;
   box-sizing: border-box;
   padding-top: 10vh;
