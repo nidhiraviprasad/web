@@ -74,8 +74,8 @@ a:visited {
 }
 head {
 	padding: 3rem;
-	padding-top: 100vh;
-	display:inline-block; 
+	white-space: nowrap;
+        overflow-x: auto;
 }
 body {
   background: #edc7b7;
