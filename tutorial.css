@@ -53,6 +53,8 @@ h1 {
 	padding: 1rem;
 	font-family: 'Roboto Slab', serif;
 	color: #ac3b61;
+	float: left;
+	margin-right: 200px;
 }
 h2 {
 	font-family: 'Roboto Slab', serif;
