@@ -10,7 +10,7 @@
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background:  #ffb8eb;
+  background:  #ac3b61;
   font-weight: bold;
   transition: background ease 0.2s;
 }
@@ -21,7 +21,7 @@
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #ebebeb;
+  background: #eee2dc;
 }
 
 .tabs input[type="radio"] {
@@ -29,7 +29,7 @@
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #ebebeb;
+  background: #eee2dc;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
@@ -46,13 +46,22 @@
     width: 100%;
     margin-right: 0;
     margin-top: 0.2rem;
+    color: #faaaf5;
   }
 }
 h1 {
 	font-family: 'Roboto Slab', serif;
+	color: #ac3b61;
+}
+h2 {
+	font-family: 'Roboto Slab', serif;
+}
+h3 {
+	font-family: 'Roboto Slab', serif;
+	color: #faaaf5;
 }
 body {
-  background: #5891bf;
+  background: #edb7c7;
   min-height: 100vh;
   box-sizing: border-box;
   padding-top: 10vh;
