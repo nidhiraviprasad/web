@@ -72,6 +72,10 @@ a:visited {
   background-color: transparent;
   text-decoration: none;
 }
+head {
+	padding: 1rem 2rem;
+	padding-top: 100vh;
+}
 body {
   background: #edc7b7;
   min-height: 100vh;
