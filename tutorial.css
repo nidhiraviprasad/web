@@ -69,12 +69,12 @@ h3 {
 	min-width:800px;
 	margin-bottom:20px;
 	margin-top:20px;
-	margin-left:auto;
+	margin-left:20px;
 	margin-right:auto;
 }
 .lefttext {
 	float: left;
-	margin-right: 300px;
+	margin-right: 500px;
 }
 .rightimage {
 	float: none;
