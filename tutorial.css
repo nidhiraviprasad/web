@@ -13,7 +13,7 @@
   background:  #ac3b61;
   font-weight: bold;
   transition: background ease 0.2s;
-  color: #ffa1e1;
+  color: #f0b6dd;
 }
 
 .tabs .tab {
@@ -50,6 +50,7 @@
   }
 }
 h1 {
+	padding: 1rem;
 	font-family: 'Roboto Slab', serif;
 	color: #ac3b61;
 }
@@ -58,7 +59,7 @@ h2 {
 }
 h3 {
 	font-family: 'Roboto Slab', serif;
-	color: #ffa1e1;
+	color: #f0b6dd;
 }
 body {
   background: #edc7b7;
