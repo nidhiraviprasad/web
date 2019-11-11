@@ -68,16 +68,17 @@ h3 {
 	width:90%;
 	min-width:800px;
 	margin-bottom:20px;
-	margin-top:20px;
-	margin-left:20px;
+	margin-left:1rem;
 	margin-right:auto;
 }
 .lefttext {
 	float: left;
-	margin-right: 500px;
+	margin-right: 700px;
+	margin-top:20px;
 }
 .rightimage {
 	float: none;
+	margin-top: 60px;
 }
 a:link {
   color: #f0b6dd; 
