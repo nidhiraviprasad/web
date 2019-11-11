@@ -62,12 +62,22 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 	color: #eb88c5;
 }
+#container {
+	overflow:hidden;
+	position:relative;
+	width:90%;
+	min-width:800px;
+	margin-bottom:20px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+}
 .lefttext {
 	float: left;
 	margin-right: 300px;
 }
 .rightimage {
-	float: right;
+	float: none;
 }
 a:link {
   color: #f0b6dd; 
