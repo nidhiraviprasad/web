@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:500|Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300|Ribeye&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Raleway:300&display=swap');
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -52,20 +52,20 @@
 }
 h1 {
 	padding: 1rem;
-	font-family: 'Ribeye', cursive;
+	font-family: 'IM Fell English SC', serif;
 	color: #ac3b61;
 	margin-right: 200px;
 }
 h2 {
-	font-family: 'Ribeye', cursive;
+	font-family: 'IM Fell English SC', serif;
 	color: #ac3b61;
 }
 h3 {
-	font-family: 'Ribeye', cursive;
+	font-family: 'IM Fell English SC', serif;
 	color: #eb88c5;
 }
 h4 {
-	font-family: 'Ribeye', cursive;
+	font-family: 'IM Fell English SC', serif;
 	color: #eb88c5;
 }
 #container {
